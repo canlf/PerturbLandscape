@@ -17,21 +17,34 @@ During inference, single-cell perturbation trajectories are transported onto spa
 
 PerturbLandscape
 ├── train_sc_to_st.py              # SC model training script 
+
 ├── models.py                      # Neural network definitions
+
 ├── spatial_utils.py               # Denoising, OT, deconvolution, metrics 
+
 ├── main_st_inference.py           # ST inference & visualization 
+
 ├── best_model_sc_ST.pt            # Trained checkpoint (generated after training) 
+
 
 
 ## Requirements
 bash
+
 torch >= 2.0
+
 scanpy >= 1.9
+
 anndata
+
 numpy
+
 pandas
+
 scipy
+
 scikit-learn
+
 tqdm
 pot                    # Python Optimal Transport
 matplotlib
